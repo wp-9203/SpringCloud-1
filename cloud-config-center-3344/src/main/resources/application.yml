@@ -8,12 +8,15 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:wp-9203/springCloud-config.git
+          uri: https://github.com/wp-9203/springCloud-config.git
           search-paths:
             - springCloud-config #搜素目录
+          skip-ssl-validation: true
+          username: wp-9203
+          password: Wp@920312
 
       label: master #读取分支
 eureka:
   client:
     service-url:
-      deaultZone: http://localhost:7001/eureka
+      defaultZone: http://localhost:7001/eureka
