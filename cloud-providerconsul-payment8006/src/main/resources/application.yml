@@ -1,0 +1,14 @@
+server:
+  port: 8006
+
+spring:
+  application:
+    name: consul-provider-payment
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        service-name: ${spring.application.name}
+        heartbeat:
+          enabled: true #Consul注册中心显示红叉 (All service checks failing) 心跳机制没有打开，所以健康检查总是报红 true:打开心跳机制
