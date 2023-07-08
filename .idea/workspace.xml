@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c96751c3-5aaa-45c6-992a-6546bdfbd062" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-center-3344/src/main/java/com/wp/springcloud/ConfigCenterMain3344.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config-center-3344/src/main/java/com/wp/springcloud/ConfigCenterMain3344.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-center-3344/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config-center-3344/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="c96751c3-5aaa-45c6-992a-6546bdfbd062" name="Changes" comment="服务配置 config 修改">
+      <change beforePath="$PROJECT_DIR$/cloud-config-center-3344/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config-center-3344/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,8 +193,16 @@
       <workItem from="1688609052385" duration="17363000" />
       <workItem from="1688691656295" duration="16702000" />
       <workItem from="1688735545267" duration="2116000" />
-      <workItem from="1688797618612" duration="4927000" />
+      <workItem from="1688797618612" duration="5391000" />
     </task>
+    <task id="LOCAL-00001" summary="服务配置 config 修改">
+      <created>1688829426041</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1688829426042</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,6 +218,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="服务配置 config 修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="服务配置 config 修改" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
