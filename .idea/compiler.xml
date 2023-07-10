@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cloud-providerconsul-payment8006" />
         <module name="cloud-provider-payment8002" />
+        <module name="cloud-config-client3366" />
         <module name="cloud-provider-payment8004" />
         <module name="cloud-eureka-server7001" />
         <module name="cloud-gateway-gatewany9527" />
@@ -22,6 +23,7 @@
         <module name="cloud-consumer-hystrix-dadhboard9001" />
         <module name="cloud-consumer-order80" />
         <module name="cloud-provider-hystrix-payment8001" />
+        <module name="cloud-config-client-3355" />
         <module name="cloud-consumer-feign-order80" />
       </profile>
     </annotationProcessing>
