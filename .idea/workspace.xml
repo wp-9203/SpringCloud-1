@@ -4,20 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c96751c3-5aaa-45c6-992a-6546bdfbd062" name="Changes" comment="服务配置 config 修改">
-      <change afterPath="$PROJECT_DIR$/cloud-config-client-3355/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-config-client-3355/src/main/java/com/wp/springcloud/ConfigClientMain3355.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-config-client-3355/src/main/java/com/wp/springcloud/controller/ConfigClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-config-client-3355/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-config-client3366/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-config-client3366/src/main/java/com/wp/springcloud/ConfigClientMain3366.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-config-client3366/src/main/java/com/wp/springcloud/controller/ConfigClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-config-client3366/src/main/resources/bootstrap.yml" afterDir="false" />
+    <list default="true" id="c96751c3-5aaa-45c6-992a-6546bdfbd062" name="Changes" comment="config-client消息配置客户端代码，配置动态(curl)刷新&#10;springcloud bus 消息总线，动态刷新全局配置，动态定点刷新">
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/src/main/java/com/wp/springcloud/StreamMQMain8802.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/src/main/java/com/wp/springcloud/controller/ReceiveMessageListenerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8802/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/src/main/java/com/wp/springcloud/StreamMQMain8803.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/src/main/java/com/wp/springcloud/controller/ReceiveMessageListenerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-consumer8803/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/wp/springcloud/StreamMQMain8801.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/wp/springcloud/controller/SendMessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/wp/springcloud/service/ImessageProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/java/com/wp/springcloud/service/impl/IMessageProviderImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-stream-rabbitmq-provider8801/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-center-3344/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config-center-3344/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-config-center-3344/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-config-center-3344/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,8 +78,8 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.31300348",
-    "settings.editor.selected.configurable": "editor.preferences.import",
-    "spring.configuration.checksum": "0a3ccaed78fa591f36a0e8e10e566125"
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "spring.configuration.checksum": "a4c2bc66b0181b3684292912356fec28"
   }
 }]]></component>
   <component name="ReactorSettings">
@@ -103,7 +107,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ConfigClientMain3366">
+  <component name="RunManager" selected="Spring Boot.StreamMQMain8803">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="SpringCloud-1" />
       <method v="2">
@@ -113,32 +117,6 @@
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <module name="SpringCloud-1" />
       <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConfigCenterMain3344" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-config-center-3344" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wp.springcloud.ConfigCenterMain3344" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wp.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ConfigClientMain3355" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-config-client-3355" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wp.springcloud.ConfigClientMain3355" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wp.springcloud.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,9 +147,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GatewayMain9527" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="cloud-gateway-gatewany9527" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wp.springcloud.GatewayMain9527" />
+    <configuration name="StreamMQMain8801" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-stream-rabbitmq-provider8801" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wp.springcloud.StreamMQMain8801" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wp.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamMQMain8802" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-stream-rabbitmq-consumer8802" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wp.springcloud.StreamMQMain8802" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wp.springcloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StreamMQMain8803" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cloud-stream-rabbitmq-consumer8803" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wp.springcloud.StreamMQMain8803" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.wp.springcloud.*" />
@@ -184,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.ConfigClientMain3366" />
-        <item itemvalue="Spring Boot.ConfigClientMain3355" />
-        <item itemvalue="Spring Boot.ConfigCenterMain3344" />
+        <item itemvalue="Spring Boot.StreamMQMain8803" />
+        <item itemvalue="Spring Boot.StreamMQMain8802" />
+        <item itemvalue="Spring Boot.StreamMQMain8801" />
         <item itemvalue="Spring Boot.EurekaMain7001" />
-        <item itemvalue="Spring Boot.GatewayMain9527" />
+        <item itemvalue="Spring Boot.ConfigClientMain3366" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +214,8 @@
       <workItem from="1688691656295" duration="16702000" />
       <workItem from="1688735545267" duration="2116000" />
       <workItem from="1688797618612" duration="5556000" />
-      <workItem from="1688961847843" duration="9513000" />
+      <workItem from="1688961847843" duration="13622000" />
+      <workItem from="1689037308614" duration="6077000" />
     </task>
     <task id="LOCAL-00001" summary="服务配置 config 修改">
       <created>1688829426041</created>
@@ -226,7 +231,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688829824384</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="config-client消息配置客户端代码，配置动态(curl)刷新&#10;springcloud bus 消息总线，动态刷新全局配置，动态定点刷新">
+      <created>1688985420815</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1688985420816</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +257,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="服务配置 config 修改" />
-    <option name="LAST_COMMIT_MESSAGE" value="服务配置 config 修改" />
+    <MESSAGE value="config-client消息配置客户端代码，配置动态(curl)刷新&#10;springcloud bus 消息总线，动态刷新全局配置，动态定点刷新" />
+    <option name="LAST_COMMIT_MESSAGE" value="config-client消息配置客户端代码，配置动态(curl)刷新&#10;springcloud bus 消息总线，动态刷新全局配置，动态定点刷新" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
