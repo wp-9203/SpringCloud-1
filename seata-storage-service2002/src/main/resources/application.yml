@@ -1,0 +1,49 @@
+server:
+  port: 2002
+
+spring:
+  application:
+    name: seata-storage-service
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        namespace: 21b8202a-5fc1-4116-9369-010db79a6386
+        group: SEATA_GROUP
+    alibaba:
+      seata:
+        tx-service-group: default_tx_group
+  datasource:
+      type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
+      driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
+      url: jdbc:mysql://localhost:3306/seata_storage?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 123456
+seata:
+  enable: true
+  application-id: ${spring.application.name}
+  tx_service-group: default_tx_group
+  enable-auto-data-source-procy: true
+  service:
+    vgroup-mapping:
+      default_tx_group: default
+  config:
+    type: nacos
+    nacos:
+      serverAddr: localhost:8848
+      group: SEATA_GROUP
+      namespace: 21b8202a-5fc1-4116-9369-010db79a6386
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      serverAddr: localhost:8848
+      namespace: 21b8202a-5fc1-4116-9369-010db79a6386
+
+logging:
+    level:
+      io:
+        seata: info
+mybatis:
+    mapperLocations: classpath:mapper/*.xml
+    type-aliases-package: com.wp.springcloud.alibaba.entities    # 所有Entity别名类所在包
